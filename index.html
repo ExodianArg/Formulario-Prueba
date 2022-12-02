@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Formulario de encuesta</title>
+  </head>
+  <body>
+    <div class="container">
+      <fieldset>
+        <header>
+          <h1 class="title" id="title">Formulario de encuesta</h1>
+          <p class="subtítulo" id="description"><i>Aquí debajo podrás responder la encuesta</i></p>
+        </header>
+      </fieldset>
+      <fieldset>  
+      <form id="survey-form">
+        <label for="name-label" id="name-label">Nombre <input id="name" type="text" class="placeholder" placeholder="Escribe tu nombre aquí" required></label>
+        <label for="email-label" id="email-label">Email <input id="email" type="email" class="placeholder" placeholder="Escribe tu correo electrónico aquí" required></label>
+        <label for="number-label" id="number-label">Edad <input id="number" type="number" min="13" max="120" class="placeholder" placeholder="Escribe tu edad aquí" required></label>
+      </fieldset>
+      <fieldset>
+        <label for="dropdown">¿Cómo supiste sobre nosotros?:
+          <select id="dropdown" name="dropdown">
+            <option value="1">Haz click y elige una</option>
+            <option value="2">En Internet</option>
+            <option value="3">En Televisión</option>
+          </select>
+      </fieldset>
+      <fieldset>
+        </label>
+        <label for="personal-account"><input id="personal-account" type="radio" name="account type" class="inline" value="1">Cuenta Personal</label>
+        <label for="business-account"><input id="business-account" type="radio" name="account type" class="inline" value="2">Cuenta Comercial</label>
+      </fieldset>
+      <fieldset>
+        <label for="terms-and-conditions" name="terms-and-conditions"><input id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" class="inline" value="3" > Acepto los términos y condiciones</label>
+        <label for="newsletter-subscription" name="newsletter-subscription"><input id="newsletter-subscription" type="checkbox" value="4" required name="newsletter-subscription" class="inline"> Acepto recibir e-mails con novedades e información con nuestras ofertas</label>
+      </fieldset>
+      <fieldset>
+        <label for="bio"> Cuéntanos por qué estás interesado en nuestros servicios:</label>   
+        <label><textarea id="bio" name="bio" rows="3" cols="30" class="placeholder" placeholder="Me gustaría recibir información sobre sus beneficios y ventajas..."></textarea></label>
+        <input id="submit" type="submit" value="Enviar">
+      </fieldset>
+      </form>
+    </div>
+  </body>
+</html>
